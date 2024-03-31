@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+    color: chocolate;
+    font-size: 100px;
+}
+
+h2 {
+  color: black;
+}
+
+img {
+  border-radius: 50px 50px 0px 0px;
+}
+.container {
+  margin: auto;
+  margin-top: 50px;
+  width: 80dvw;
+  align-self: center;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  gap: 70px;
+}
+
+.card {
+  height: 370px;
+  width: 300px;
+  overflow: hidden;
+  transition: 200ms;
+
+  /* margin: 20px 20px 20px 20px; */
+
+  border-radius: 50px;
+background: #ffffff;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
+.container2 {
+  padding-top: 40px;
+  margin: auto;
+  height: 120px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  flex-wrap: space-between;
+  align-self: center;
+
+}
+
+button {
+  
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

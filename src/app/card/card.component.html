@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="card" *ngFor="let i of result" >
+        <div (click)="SelectCharacter(i)">
+            <div class="imga">
+                <img src="{{i.image}}" alt={{i.name}} onerror="this.src='https://rickandmortyapi.com/api/character/avatar/19.jpeg';">
+    
+            </div>
+            <div class="det">
+                <h2>{{i.name}}</h2>
+            </div>
+          </div>
+        </div>
+ </div>
+
+ <app-footer></app-footer>
+<!-- 
+ <div class="container2">
+    <button (click)="sub()"><< Prev</button>
+    <p>Page:{{item}}</p>
+    <button (click)="add()">Next >></button>
+    
+
+</div> -->
